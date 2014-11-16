@@ -33,7 +33,7 @@ except ImportError:
     from sha import new as sha1
 
 from constants import (FieldFlag, ServerCmd)
-import (errors, utils)
+import errors, utils
 
 class MySQLProtocol(object):
     def _scramble_password(self, passwd, seed):
